@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acme Innovations</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Business Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Vertex Innovations</div>
+            <img src="vert.png" alt="logo" class="logo">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -20,13 +22,54 @@
         </nav>
     </header>
 
+    <div class="hero-image">  
+        <section id="home" class="home">
+            <div class="home">
+                <h1>Vertex Engineering</h1>
+                <p>The Peak of Engineering Brilliance.</p>
+                <a href="#contact" class="home-button">Learn More</a>
+            </div>
+        </section>
+    </div>
+
     <section id="about" class="about-us">
         <h2>About Us</h2>
         <div class="about-content">
-            <p>At Vertex, we engineer the future with precision and innovation. Our team of experts is dedicated to designing and delivering cutting-edge solutions that drive progress and efficiency across industries. From concept to completion, we bring engineering excellence to every project.</p>
+            <p>At Vertex, we engineer the future with precision and innovation. Our team of experts is dedicated to designing and delivering cutting-edge solutions that drive progress and efficiency across industries. From concept to completion, we bring engineering excellence to every project</p>
         </div>
     </section>
 
-    
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service">
+                <img src="bridges.jpeg" alt="Service 1">
+                <h3>Structural Designing</h3>
+                <p>Designing safe, stable, and durable structures.</p>
+            </div>
+            <div class="service">
+                <img src="dev.jpg" alt="Service 2">
+                <h3>Site Development</h3>
+                <p>Planning & Designing Residential, Commercial, & Industrial Sites</p>
+            </div>
+            <div class="service">
+                <img src="renov.jpg" alt="Service 3">
+                <h3>Renovation and Retrofitting</h3>
+                <p>Improving the Safety & Functionality of Existing Structures
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-us">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </section>
 </body>
 </html>

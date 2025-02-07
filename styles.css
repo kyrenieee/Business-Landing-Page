@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,11 +7,22 @@ body {
     color: #333;
 }
 
-/* Header and Navigation */
 header {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     padding: 1rem 0;
+}
+
+.logo {
+    height: 130px;
+}
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("web.jpeg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 nav {
@@ -23,7 +34,7 @@ nav {
     padding: 0 2rem;
 }
 
-.logo {
+.name {
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -41,47 +52,45 @@ nav a {
 }
 
 nav a:hover {
-    color: #bbb;
+    color: #1f6bf9;
 }
 
-/* Hero Section */
-.hero {
+.home {
     background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 5rem 0;
 }
 
-.hero-content {
+.home-content {
     max-width: 800px;
     margin: 0 auto;
 }
 
-.hero h1 {
+.home h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.hero p {
+.home p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
-.cta-button {
+.home-button {
     display: inline-block;
     padding: 1rem 2rem;
-    background-color: #007bff;
+    background-color: #002246;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
+.home-button:hover {
     background-color: #0056b3;
 }
 
-/* About Us Section */
 .about-us {
     max-width: 1200px;
     margin: 2rem auto;
@@ -90,26 +99,20 @@ nav a:hover {
 
 .about-us h2 {
     text-align: center;
-    margin-bottom: 2rem;
 }
 
 .about-content {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
-}
-
-.about-content img {
-    width: 400px;
-    border-radius: 5px;
+    text-align: center;
 }
 
 .about-content p {
     font-size: 1.1rem;
-    line-height: 1.6;
+    line-height: 1.5rem;
 }
 
-/* Services Section */
 .services {
     background-color: #fff;
     padding: 2rem 0;
@@ -137,7 +140,7 @@ nav a:hover {
 }
 
 .service img {
-    width: 50px;
+    width: 250px;
     margin-bottom: 1rem;
 }
 
@@ -150,7 +153,6 @@ nav a:hover {
     line-height: 1.4;
 }
 
-/* Contact Us Section */
 .contact-us {
     max-width: 1200px;
     margin: 2rem auto;
@@ -172,6 +174,7 @@ nav a:hover {
 
 .contact-us input,
 .contact-us textarea {
+    font-family: 'Raleway', sans-serif;
     padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -179,13 +182,15 @@ nav a:hover {
 }
 
 .contact-us textarea {
+    font-family: 'Raleway', sans-serif;
     resize: vertical;
     min-height: 150px;
 }
 
 .submit-button {
+    font-family: 'Raleway', sans-serif;
     padding: 1rem 2rem;
-    background-color: #28a745;
+    background-color: #002246;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -194,18 +199,9 @@ nav a:hover {
 }
 
 .submit-button:hover {
-    background-color: #218838;
+    background-color: #0056b3;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
